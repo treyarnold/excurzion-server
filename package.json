@@ -1,0 +1,22 @@
+{
+  "name": "excurzion-server",
+  "version": "1.0.0",
+  "description": "server for excurzion 360 and vr streaming platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treyarnold/excurzion-server.git"
+  },
+  "author": "Trey Arnold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/treyarnold/excurzion-server/issues"
+  },
+  "homepage": "https://github.com/treyarnold/excurzion-server#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.1"
+  }
+}
