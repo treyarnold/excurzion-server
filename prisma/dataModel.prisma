@@ -1,0 +1,26 @@
+type Video {
+  id: ID! @id
+  createdAt: DateTime! @createdAt
+  title: String!
+  description: String!
+  url: String!
+  thumbnail: String!
+  postedBy: User
+  comments: [Comment!]!
+}
+
+type User {
+  id: ID! @id
+  name: String!
+  email: String! @unique
+  password: String!
+  comments: [Comment!]!
+  videos: [Video!]! 
+}
+
+type Comment {
+  id: ID! @id
+  postedBy: User!
+  text: String!
+  video: Video!
+}

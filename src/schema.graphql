@@ -1,0 +1,23 @@
+type Query {
+  info: String!
+  feed: [Video!]!
+}
+
+type Mutation {
+  postVideo(url: String!, description: String!, title: String!, thumbnail: String!): Video!
+  postComment(text: String!, id: ID!): Comment!
+}
+
+type Video {
+  id: ID!
+  description: String!
+  title: String
+  url: String!
+  thumbnail: String!
+}
+
+type Comment {
+  id: ID!
+  text: String!
+  video: Video!
+}
